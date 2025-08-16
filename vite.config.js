@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
-
+import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [
@@ -9,7 +9,16 @@ export default defineConfig({
   build: {
     outDir: 'dist', // Where to output build files
     emptyOutDir: true, // Clean dist before building
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        formvalidation: resolve(__dirname, 'src/formvalidation.js'),
+      },
+    },
   },
+
+  assetsInclude: ['**/*.js'],
+  publicDir: 'public',
 
   server: {
     port: 3000,

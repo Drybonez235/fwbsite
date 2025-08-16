@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>fwbsite - Free Will Baptist Web Hosting</title>
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet" />
 </head>
-<body class="font-sans bg-white text-gray-800">
 
+<body class="font-sans bg-white text-gray-800">
   <!-- Navigation -->
   <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
-    <div class="mx-auto px-4 sm:px-6 lg:px-8 flex h-16 mt-2 mb-2 justify-between">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8 flex h-12 mt-2 mb-2 justify-between">
       <!-- Logo -->
       <div class="flex items-start space-x-2">
-        <img src="public/fwbsite_text_blank_background.png" alt="fwbsite logo" class="h-fit w-auto" />
+        <img src="public/fwbsite_text_blank_background.png" alt="fwbsite logo" class="h-full w-auto" />
       </div>
 
       <!-- Nav Links -->
       <nav class="hidden md:flex space-x-8 items-center">
         <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-        <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
         <a href="#pricing" class="text-gray-700 hover:text-blue-600 font-medium">Pricing</a>
+        <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
         <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
       </nav>
     </div>
@@ -29,139 +30,446 @@
   <!-- Hero Section -->
   <section id="home" class="pt-16 flex flex-col justify-center items-center text-center relative">
     <!-- Background Gradient -->
-    <div class="absolute inset-0 bg-gradient-to-br from-[#78B6D9] to-[#4D90B5] z-0"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#6895fd] to-[#001f65] z-0"></div>
 
     <!-- Captivating Image -->
     <div class="relative z-10">
-      <img src="/public/fwbsite_hero.png" alt="A church in front of a web globe with doves flaying away" class="max-w-full rounded-lg shadow-lg" />
-      <h2 class="absolute text-2xl bottom-1/12 right-5  md:text-4xl lg:text-5xl xl:text-6xl text-gray-800">Church Websites Made Simple</h2>
+      <img src="/public/fwbsite_hero.png" alt="A church in front of a web globe with doves flaying away"
+        class="max-w-full rounded-lg shadow-lg" />
+      <h2
+        class="font[Mulish] font-bold text-white text-left leading-snug absolute text-2xl top-1/12 left-10 md:text-5xl lg:text-6xl xl:text-7xl">
+        Church Websites <br />Made Simple
+      </h2>
+      <h3
+        class="font[Mulish] font-bold text-white text-left leading-snug absolute text-md top-2/5 left-10 md:text-xl lg:text-2xl xl:text-3xl">
+        Spend time on the great commision,<br />
+        not your website.
+      </h3>
+      <a href="#contact"
+        class="absolute bottom-4/12 left-10 px-4 py-1 md:px-8 md:py-4 text-xs md:text-md lg:text-lg xl:text-2xl font-semibold text-white bg-gradient-to-r from-[#78B6D9] to-[#4D90B5] rounded-full shadow-lg hover:scale-110">
+        Get Started
+      </a>
+      <h3
+        class="font[Open-sans] text-gray-800 text-left leading-snug absolute bottom-4 left-10 md:bottom-6 xl:bottom-8 text:lg md:text-2xl lg:text-3xl xl:text-4xl">
+        Save <i>hundreds</i> on your church <br />
+        web hosting bill.
+      </h3>
+      <div id="total_savings_div" class="absolute bottom-4 md:bottom-8 left-5/12">
+        <span id="total_savings_int"
+          class="font[Mullish] font-bold text-gray-800 text-center text-xl md:text-2xl lg:text-4xl xl:text-6xl">0$
+        </span>
+        <p class="font[Open-sans] text-gray-800 text-sm md:text-lg lg:text-xl xl:text-2xl">
+          Total Savings
+        </p>
+      </div>
     </div>
   </section>
 
- <!-- Pricing Section -->
-<section class="py-16 bg-gray-50" id="services">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-gray-900">Our Plans</h2>
-      <p class="text-gray-600 mt-2">Choose the option that fits your ministry needs</p>
+  <!-- Pricing Section -->
+  <section class="py-16 bg-gray-50" id="pricing">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 mt-4">
+        <h2 class="text-3xl font-bold text-gray-900">Our Plans</h2>
+        <p class="text-gray-600 mt-2">
+          Choose the option that fits your ministry needs
+        </p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Mission Plan -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col self-start">
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="text-2xl font-bold text-[#4D90B5] mb-4 text-center">
+              Mission Plan
+            </h3>
+            <p class="text-4xl font-extrabold text-gray-900 text-center">
+              0<span class="text-lg font-medium">$/mo</span>
+            </p>
+            <p class="text-center text-sm text-gray-500 mb-6">
+              WordPress Hosting
+            </p>
+            <ul class="space-y-2 text-gray-700 flex-grow">
+              <li>✅ Complete account setup and support</li>
+              <li>✅ Your own personalized web address</li>
+              <li>✅ Built-in blog for ministry updates</li>
+              <li>✅ Custom missionary theme ready to use</li>
+            </ul>
+          </div>
+          <details class="mt-4">
+            <summary class="flex items-center justify-center cursor-pointer text-[#4D90B5] font-medium hover:underline">
+              <span class="mr-2">Learn More</span>
+              <span class="text-xl">+</span>
+            </summary>
+            <p class="mt-3 ml-2 text-gray-600 text-sm leading-relaxed">
+              Perfect for Free Will Baptist mission churches and missionaries.
+              Simply fill out a quick form with your ministry information and
+              we’ll set up a beautiful, mobile-friendly site with your
+              testimony, mission field, prayer requests, and blog already in
+              place. Focus on your calling — we’ll handle the tech.
+            </p>
+          </details>
+          <div class="p-6 text-center">
+            <a href="#contact"
+              class="inline-block w-full bg-[#4D90B5] text-white py-2 px-4 rounded-lg hover:bg-[#3a6d8e] transition">
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Church Basic Plan -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col self-start">
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="text-2xl font-bold text-[#C63C32] mb-4 text-center">
+              Church Basic
+            </h3>
+            <p class="text-4xl font-extrabold text-gray-900 text-center">
+              5<span class="text-lg font-medium">$/mo</span>
+            </p>
+            <p class="text-center text-sm text-gray-500 mb-6">
+              WordPress Hosting
+            </p>
+            <ul class="space-y-2 text-gray-700 flex-grow">
+              <li>✅ Complete account setup and guidance</li>
+              <li>✅ Personalized church web address</li>
+              <li>✅ Pre-built church website template</li>
+              <li>✅ Free website edit request once per month</li>
+            </ul>
+          </div>
+          <details class="mt-4">
+            <summary class="flex items-start justify-center cursor-pointer text-[#C63C32] font-medium hover:underline">
+              <span class="mr-2">Learn More</span>
+              <span class="text-xl">+</span>
+            </summary>
+            <p class="mt-3 ml-2 text-gray-600 text-sm leading-relaxed">
+              Designed for Free Will Baptist churches launching their first
+              website. Fill out a simple form and get a fully prepared site
+              with your church name, service times, beliefs, and ministry
+              pages already set up. Affordable, easy to maintain, and built to
+              share your message with your community.
+            </p>
+          </details>
+          <div class="p-6 text-center">
+            <a href="#contact"
+              class="inline-block w-full bg-[#C63C32] text-white py-2 px-4 rounded-lg hover:bg-[#9E2A21] transition">
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Church Advanced Plan -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col self-start">
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="text-2xl font-bold text-[#4D90B5] mb-4 text-center">
+              Church Advanced
+            </h3>
+            <p class="text-4xl font-extrabold text-gray-900 text-center">
+              10<span class="text-lg font-medium">$/mo</span>
+            </p>
+            <p class="text-center text-sm text-gray-500 mb-6">
+              WordPress + Traditional Pages
+            </p>
+            <ul class="space-y-2 text-gray-700 flex-grow">
+              <li>✅ Full setup with personal tech support</li>
+              <li>✅ Free website consulting sessions</li>
+              <li>✅ Bring your own domain or we set it up</li>
+              <li>✅ Free website edit request once per week</li>
+            </ul>
+          </div>
+          <details class="mt-4">
+            <summary class="flex items-center justify-center cursor-pointer text-[#4D90B5] font-medium hover:underline">
+              <span class="mr-2">Learn More</span>
+              <span class="text-xl">+</span>
+            </summary>
+            <p class="mt-3 ml-2 text-gray-600 text-sm leading-relaxed">
+              For churches ready to expand their online ministry. This plan
+              supports both WordPress and traditional web pages, includes free
+              consulting, and offers weekly edit assistance. Bring your own
+              domain or let us help set one up — giving you more control and
+              flexibility for your church’s online presence.
+            </p>
+          </details>
+          <div class="p-6 text-center">
+            <a href="#contact"
+              class="inline-block w-full bg-[#4D90B5] text-white py-2 px-4 rounded-lg hover:bg-[#3a6d8e] transition">
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="grid gap-8 md:grid-cols-3">
-      
-      <!-- Mission Plan -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col self-start">
-        <div class="p-6 flex-grow flex flex-col">
-          <h3 class="text-2xl font-bold text-[#4D90B5] mb-4 text-center">Mission Plan</h3>
-          <p class="text-4xl font-extrabold text-gray-900 text-center">0<span class="text-lg font-medium">$/mo</span></p>
-          <p class="text-center text-sm text-gray-500 mb-6">WordPress Hosting</p>
-          <ul class="space-y-2 text-gray-700 flex-grow">
-             <li>✅ Complete account setup and support</li>
-            <li>✅ Your own personalized web address</li>
-            <li>✅ Built-in blog for ministry updates</li>
-            <li>✅ Custom missionary theme ready to use</li>
-          </ul>
-        </div>
-            <details class="mt-4">
-  <summary class="flex items-center justify-center cursor-pointer text-[#4D90B5] font-medium hover:underline">
-    <span class="mr-2">Learn More</span>
-    <span class="text-xl">+</span>
-  </summary>
-  <p class="mt-3 ml-2 text-gray-600 text-sm leading-relaxed">
-    Perfect for Free Will Baptist mission churches and missionaries.  
-              Simply fill out a quick form with your ministry information and we’ll set up a beautiful, mobile-friendly site with your testimony, mission field, prayer requests, and blog already in place.  
-              Focus on your calling — we’ll handle the tech.
-  </p>
-</details>
-        <div class="p-6 text-center">
-          <a href="#contact" class="inline-block w-full bg-[#4D90B5] text-white py-2 px-4 rounded-lg hover:bg-[#3a6d8e] transition">
-            Contact Me
-          </a>
-        </div>
-      </div>
-
-      <!-- Church Basic Plan -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col self-start">
-        <div class="p-6 flex-grow flex flex-col">
-          <h3 class="text-2xl font-bold text-[#C63C32] mb-4 text-center">Church Basic</h3>
-          <p class="text-4xl font-extrabold text-gray-900 text-center">5<span class="text-lg font-medium">$/mo</span></p>
-          <p class="text-center text-sm text-gray-500 mb-6">WordPress Hosting</p>
-          <ul class="space-y-2 text-gray-700 flex-grow">
-            <li>✅ Complete account setup and guidance</li>
-            <li>✅ Personalized church web address</li>
-            <li>✅ Pre-built church website template</li>
-            <li>✅ Free website edit request once per month</li>
-          </ul>
-        </div>
-        <details class="mt-4">
-  <summary class="flex items-start  justify-center cursor-pointer text-[#C63C32] font-medium hover:underline">
-    <span class="mr-2">Learn More</span>
-    <span class="text-xl">+</span>
-  </summary>
-  <p class="mt-3 ml-2 text-gray-600 text-sm leading-relaxed">
-    Designed for Free Will Baptist churches launching their first website.  
-              Fill out a simple form and get a fully prepared site with your church name, service times, beliefs, and ministry pages already set up.  
-              Affordable, easy to maintain, and built to share your message with your community.
-  </p>
-</details>
-        <div class="p-6 text-center">
-          <a href="#contact" class="inline-block w-full bg-[#C63C32] text-white py-2 px-4 rounded-lg hover:bg-[#9E2A21] transition">
-            Contact Me
-          </a>
-        </div>
-      </div>
-
-      <!-- Church Advanced Plan -->
-     <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col self-start">
-        <div class="p-6 flex-grow flex flex-col">
-          <h3 class="text-2xl font-bold text-[#4D90B5] mb-4 text-center">Church Advanced</h3>
-          <p class="text-4xl font-extrabold text-gray-900 text-center">10<span class="text-lg font-medium">$/mo</span></p>
-          <p class="text-center text-sm text-gray-500 mb-6">WordPress + Traditional Pages</p>
-          <ul class="space-y-2 text-gray-700 flex-grow">
-            <li>✅ Full setup with personal tech support</li>
-            <li>✅ Free website consulting sessions</li>
-            <li>✅ Bring your own domain or we set it up</li>
-            <li>✅ Free website edit request once per week</li>
-          </ul>
-        </div>
-        <details class="mt-4">
-  <summary class="flex items-center justify-center cursor-pointer text-[#4D90B5] font-medium hover:underline">
-    <span class="mr-2">Learn More</span>
-    <span class="text-xl">+</span>
-  </summary>
-  <p class="mt-3 ml-2 text-gray-600 text-sm leading-relaxed">
-    For churches ready to expand their online ministry.  
-              This plan supports both WordPress and traditional web pages, includes free consulting, and offers weekly edit assistance.  
-              Bring your own domain or let us help set one up — giving you more control and flexibility for your church’s online presence.
-  </p>
-</details>
-        <div class="p-6 text-center">
-          <a href="#contact" class="inline-block w-full bg-[#4D90B5] text-white py-2 px-4 rounded-lg hover:bg-[#3a6d8e] transition">
-            Contact Me
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- Final Tagline -->
   <section class="py-12 bg-[#E3EEF5] text-center">
     <p class="max-w-2xl mx-auto text-lg font-medium text-gray-800">
-      fwbsite is your first step to launching a church website in an affordable way.
+      fwbsite is your first step to launching a church website in an
+      affordable way.
     </p>
   </section>
 
-  <!-- Placeholder for Additional Sections -->
-  <section id="about" class="h-screen flex items-center justify-center bg-white">
-    <h2 class="text-3xl font-bold">About Section</h2>
-  </section>
-  <section id="pricing" class="h-screen flex items-center justify-center bg-gray-50">
-    <h2 class="text-3xl font-bold">Pricing Section</h2>
-  </section>
-  <section id="contact" class="h-screen flex items-center justify-center bg-white">
-    <h2 class="text-3xl font-bold">Contact Section</h2>
+  <!-- About Me Section -->
+  <section id="about" class="py-20 bg-gray-50 flex">
+    <div class="max-w-6xl mx-auto px-20 grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Picture -->
+      <div class="flex justify-center">
+        <img src="public/jonathan_lewis.avif" alt="Jonathan"
+          class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-4/6 h-auto object-cover" />
+      </div>
+
+      <!-- Text Content -->
+      <div>
+        <!-- Large Quote -->
+        <blockquote class="text-2xl italic text-[#4D90B5] font-semibold mb-6">
+          "I want to be a blessing to pastors and churches by making websites
+          simple and affordable" - Jonathan Lewis
+        </blockquote>
+
+        <!-- Story -->
+        <p class="mb-4 text-gray-700 leading-relaxed">
+          My name is Jonathan and I owe my salvation to Jesus Christ who died
+          on the cross to pay for my sins. This Gospel was handed down to me
+          from my parents, my church, and the Free Will Baptist Denomination.
+        </p>
+        <p class="mb-4 text-gray-700 leading-relaxed">
+          I am a graduate of Welch College and serve as the treasurer of
+          Northwest Community FWB Church. I have seen first-hand how difficult
+          it can be for a pastor to build a simple website while also juggling
+          everyday ministry. I wanted to use my knowledge of computer science
+          and website design to be a blessing to pastors, Free Will Baptist
+          churches, and the denomination as a whole.
+        </p>
+        <p class="mb-4 text-gray-700 leading-relaxed">
+          I recently became a stay-at-home dad and am using this season in
+          life to start this ministry that will save churches money, while
+          also helping my family. My church was paying over $25 per month for
+          web hosting, and I knew I could provide it for less.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          In Matthew 28, Jesus said to go and make disciples of all nations.
+          In today’s age, having a website aids in that commission. Please
+          contact me and see how I can help your church with its digital
+          needs.
+        </p>
+      </div>
+    </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          Get in Touch
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Ready to get your church online? Let's discuss how fwbsite can serve
+          your ministry.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+          <!-- Contact Form Section -->
+          <div class="max-w-2xl mx-auto">
+            <!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+            <form
+              action="https://forms.zohopublic.com/jonathanlewiswe1/form/fwbsiteinterest/formperma/xPMfZDql0dN7AIeOHdvxf5UW7vHk_tRvGcy28twbM2g/htmlRecords/submit"
+              name="form" method="POST" onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();'
+              accept-charset="UTF-8" enctype="multipart/form-data" id="form"
+              class="bg-gray-50 rounded-xl shadow-lg p-8">
+              <input type="hidden" name="zf_referrer_name" value="" />
+              <input type="hidden" name="zf_redirect_url" value="" />
+              <input type="hidden" name="zc_gad" value="" />
+
+              <!-- Form Header -->
+              <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                  Get Started with fwbsite
+                </h2>
+                <p class="text-gray-600">
+                  Tell me about your ministry and let's discuss how I can help
+                </p>
+              </div>
+
+              <!-- Name Fields Row -->
+              <div class="grid sm:grid-cols-2 gap-4 mb-6">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">
+                    First Name
+                  </label>
+                  <input type="text" maxlength="255" name="Name_First" fieldType="7" placeholder=""
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4D90B5] focus:border-transparent transition" />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Last Name
+                  </label>
+                  <input type="text" maxlength="255" name="Name_Last" fieldType="7" placeholder=""
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4D90B5] focus:border-transparent transition" />
+                </div>
+              </div>
+
+              <p id="Name_error" class="text-red-600 text-sm mt-1" style="display: none">
+                Invalid value
+              </p>
+
+              <!-- Email Field -->
+              <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  Email Address <span class="text-red-500">*</span>
+                </label>
+                <input type="text" name="Email" checktype="c5" value="" maxlength="255" fieldType="9"
+                  placeholder="your@email.com"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4D90B5] focus:border-transparent transition" />
+                <p id="Email_error" class="text-red-600 text-sm mt-1" style="display: none">
+                  Invalid value
+                </p>
+              </div>
+
+              <!-- Church Name -->
+              <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  Church Name
+                </label>
+                <input type="text" name="SingleLine" checktype="c1" value="" maxlength="255" fieldType="1"
+                  placeholder="First Baptist Church"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4D90B5] focus:border-transparent transition" />
+                <p id="SingleLine_error" class="text-red-600 text-sm mt-1" style="display: none">
+                  Invalid value
+                </p>
+              </div>
+
+              <!-- Plan Selection -->
+              <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  What plan are you interested in?
+                  <span class="text-red-500">*</span>
+                </label>
+                <select name="Dropdown" checktype="c1"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4D90B5] focus:border-transparent transition bg-white appearance-none">
+                  <option selected="true" value="-Select-">
+                    Select a plan...
+                  </option>
+                  <option value="Missions Plan">Mission Plan (Free)</option>
+                  <option value="Church Basic">Church Basic ($5/mo)</option>
+                  <option value="Church Advanced">
+                    Church Advanced ($10/mo)
+                  </option>
+                  <option value="Other Web Consulting">
+                    Other Web Consulting
+                  </option>
+                </select>
+                <p id="Dropdown_error" class="text-red-600 text-sm mt-1" style="display: none">
+                  Invalid value
+                </p>
+              </div>
+
+              <!-- Message Field -->
+              <div class="mb-8">
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  Tell me about your church and how I can help you!
+                </label>
+                <textarea name="MultiLine" checktype="c1" maxlength="65535"
+                  placeholder="Share your church's story, current website situation, and what you hope to accomplish..."
+                  rows="5"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4D90B5] focus:border-transparent transition resize-vertical"></textarea>
+                <p id="MultiLine_error" class="text-red-600 text-sm mt-1" style="display: none">
+                  Invalid value
+                </p>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="text-center">
+                <button type="submit"
+                  class="w-full bg-[#4D90B5] text-white py-3 px-8 rounded-lg font-semibold hover:bg-[#3a6d8e] transition duration-200 transform hover:scale-[1.02]">
+                  Send My Information
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <script type="text/javascript">
+            var dateAndMonthRegexFormateArray =
+              zf_SetDateAndMonthRegexBasedOnDateFormate("dd-MMM-yyyy");
+            var zf_DateRegex = new RegExp(dateAndMonthRegexFormateArray[0]);
+            var zf_MonthYearRegex = new RegExp(
+              dateAndMonthRegexFormateArray[1]
+            );
+            var zf_MandArray = ["Email", "Dropdown"];
+            var zf_FieldArray = [
+              "Name_First",
+              "Name_Last",
+              "Email",
+              "SingleLine",
+              "Dropdown",
+              "MultiLine",
+            ];
+            var isSalesIQIntegrationEnabled = false;
+            var salesIQFieldsArray = [];
+          </script>
+        
+
+        <!-- Contact Info & Personal Touch -->
+        <div class="space-y-8">
+          <!-- Personal Message -->
+          <div class="bg-[#E3EEF5] rounded-xl p-8">
+            <div class="flex items-start space-x-4">
+              <img src="public/jonathan_lewis.avif" alt="Jonathan Lewis"
+                class="w-16 h-16 rounded-full object-cover flex-shrink-0" />
+              <div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Let's Connect
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                  I personally respond to every message. As a fellow church leader,
+                  I understand the unique needs of
+                  Free Will Baptist churches.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Methods -->
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <h3 class="text-xl font-bold text-gray-900 mb-6">
+              Other Ways to Reach Me
+            </h3>
+
+            <div class="space-y-4">
+              <!-- Email -->
+              <div class="flex items-center space-x-4">
+                <div class="bg-[#4D90B5] p-3 rounded-lg">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-900">Email</p>
+                  <a href="mailto:jlewis@fwbsite.com" class="text-[#4D90B5] hover:underline">
+                    jlewis@fwbsite.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Response Time -->
+          <div class="bg-gradient-to-r from-[#78B6D9] to-[#4D90B5] rounded-xl p-6 text-white text-center">
+            <h3 class="font-bold text-lg mb-2">Response Time</h3>
+            <p>
+              I typically respond to all inquiries within 24 hours, often much
+              sooner!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
+<script type="module" src="/src/formvalidation.js"></script>
+
 </html>
