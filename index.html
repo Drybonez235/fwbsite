@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>fwbsite - Free Will Baptist Web Hosting</title>
   <link href="/css/style.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/favicon.svg">
 </head>
 
 <body class="font-sans bg-white text-gray-800">
@@ -14,7 +15,9 @@
     <div class="mx-auto px-4 sm:px-6 lg:px-8 flex h-12 mt-2 mb-2 justify-between">
       <!-- Logo -->
       <div class="flex items-start space-x-2">
+        <a href="#home" class="h-full w-auto">
         <img src="public/fwbsite_text_blank_background.avif" alt="fwbsite logo" class="h-full w-auto" />
+        </a>
       </div>
 
       <!-- Nav Links -->
@@ -23,11 +26,12 @@
         <a href="#pricing" class="text-gray-700 hover:text-blue-600 font-medium">Pricing</a>
         <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
         <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+        <a href="/login" class="text-gray-700 hover:text-blue-600 font-medium">Login</a> 
       </nav>
     </div>
   </header>
 
-  <section id="home" class="relative min-h-fit min-w-screen mt-8 lg:mt-16 pt-5 bg-gradient-to-t from-[#6895fd] to-[#001f65]">
+ <section id="home" class="relative min-h-fit min-w-screen mt-8 lg:mt-16 pt-5 bg-gradient-to-t from-[#6895fd] to-[#001f65] scroll-mt-20">
     <div class="container mx-8 mt-4 pb-2 pr-10 items-center">
       <!-- Main Content Grid -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
@@ -369,12 +373,8 @@
                 </option>
                 <option value="Missions Plan">Mission Plan (Free)</option>
                 <option value="Church Basic">Church Basic ($5/mo)</option>
-                <option value="Church Advanced">
-                  Church Advanced ($10/mo)
-                </option>
-                <option value="Other Web Consulting">
-                  Other Web Consulting
-                </option>
+                <option value="Church Advanced">Church Advanced ($10/mo)</option>
+                <option value="Other Web Consulting"> Web Consulting</option>
               </select>
               <p id="Dropdown_error" class="text-red-600 text-sm mt-1" style="display: none">
                 Invalid value
@@ -486,5 +486,28 @@
 </body>
 
 <script type="module" src="/src/formvalidation.js"></script>
+ <script>
+        // Savings counter animation
+        function animateCounter() {
+            const counter = document.getElementById('total_savings_int');
+            let count = 0;
+            const target = 250; // Example target number
+            const increment = target / 50;
+            
+            const timer = setInterval(() => {
+                count += increment;
+                if (count >= target) {
+                    count = target;
+                    clearInterval(timer);
+                }
+                counter.textContent = Math.floor(count) + '$';
+            }, 20);
+        }
+        
+        // Start animation when page loads
+        window.addEventListener('load', () => {
+            setTimeout(animateCounter, 500);
+        });
+    </script>
 
 </html>

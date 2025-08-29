@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | fwbsite</title>
+  <script>
+    function goToLogin(select) {
+      const url = select.value;
+      if (url) {
+        window.location.href = url;
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+  <!-- Navigation -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8 flex h-12 mt-2 mb-2 justify-between">
+      <!-- Logo -->
+      <div class="flex items-start space-x-2">
+      <a href="index.html#home" class="h-full w-auto">
+        <img src="data:image/avif;base64,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" alt="fwbsite logo" class="h-full w-auto" />
+        </a>
+    </div>
+
+      <!-- Nav Links -->
+      <nav class="hidden md:flex space-x-8 items-center">
+        <a href="index.html#home" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+        <a href="index.html#pricing" class="text-gray-700 hover:text-blue-600 font-medium">Pricing</a>
+        <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+        <a href="index.html#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+        <a href="/login" class="text-gray-700 hover:text-blue-600 font-medium">Login</a> 
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main 
+  class="flex items-center justify-center min-h-screen pt-24 bg-gradient-to-t from-[#6895fd] to-[#001f65] bg-no-repeat bg-center bg-contain"
+>
+    <div class="bg-white/90 shadow rounded-2xl p-8 w-full max-w-md text-center backdrop-blur-sm">
+
+      <h1 class="text-2xl font-semibold mb-6 text-gray-800">Church Login</h1>
+      <p class="mb-4 text-gray-600">Select your church below to log in to your WordPress dashboard.</p>
+      
+      <select 
+        onchange="goToLogin(this)" 
+        class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 p-3"
+      >
+        <option value="">-- Select Your Church --</option>
+        <option value="https://angelville.fwbchurch.org/wp-login.php">Angelville FWB church</option>
+      </select>
+
+      <p class="mt-6 text-sm text-gray-500">Need help? <a href="mailto:fwbsite@fwbchurch.org" class="text-blue-600 hover:underline">Contact Support</a></p>
+      <img src="/assets/fwbsite_picture_blank_background-DWBVynr5.avif">
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | fwbsite</title>
+  <script>
+    function goToLogin(select) {
+      const url = select.value;
+      if (url) {
+        window.location.href = url;
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+  <!-- Navigation -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8 flex h-12 mt-2 mb-2 justify-between">
+      <!-- Logo -->
+      <div class="flex items-start space-x-2">
+      <a href="index.html#home" class="h-full w-auto">
+        <img src="public/fwbsite_text_blank_background.avif" alt="fwbsite logo" class="h-full w-auto" />
+        </a>
+    </div>
+
+      <!-- Nav Links -->
+      <nav class="hidden md:flex space-x-8 items-center">
+        <a href="index.html#home" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+        <a href="index.html#pricing" class="text-gray-700 hover:text-blue-600 font-medium">Pricing</a>
+        <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+        <a href="index.html#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+        <a href="/login" class="text-gray-700 hover:text-blue-600 font-medium">Login</a> 
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main 
+  class="flex items-center justify-center min-h-screen pt-24 bg-gradient-to-t from-[#6895fd] to-[#001f65] bg-no-repeat bg-center bg-contain"
+>
+    <div class="bg-white/90 shadow rounded-2xl p-8 w-full max-w-md text-center backdrop-blur-sm">
+
+      <h1 class="text-2xl font-semibold mb-6 text-gray-800">Church Login</h1>
+      <p class="mb-4 text-gray-600">Select your church below to log in to your WordPress dashboard.</p>
+      
+      <select 
+        onchange="goToLogin(this)" 
+        class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 p-3"
+      >
+        <option value="">-- Select Your Church --</option>
+        <option value="https://angelville.fwbchurch.org/wp-login.php">Angelville FWB church</option>
+      </select>
+
+      <p class="mt-6 text-sm text-gray-500">Need help? <a href="mailto:fwbsite@fwbchurch.org" class="text-blue-600 hover:underline">Contact Support</a></p>
+      <img src="public/fwbsite_picture_blank_background.avif">
+    </div>
+  </main>
+</body>
+</html>
