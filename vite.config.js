@@ -12,7 +12,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        login: resolve(__dirname, 'login.html'), 
+        login: resolve(__dirname, 'login.html'),
+        blog: resolve(__dirname, 'blog.html'),
+        blog_article1: resolve(__dirname, '/blog-articles/how-to-get-started-with-a-church-website.html'),
         formvalidation: resolve(__dirname, 'src/formvalidation.js'),
       },
     },
