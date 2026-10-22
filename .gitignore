@@ -37,3 +37,4 @@ Thumbs.db
 # Optional cache directories
 .cache/
 vite-env.d.ts
+.wrangler
